@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国近(古)史博物馆-Museum of Recent (ancient) Chinese History</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <script src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/lib/raphael-min.js"></script>
+    <script type="text/javascript" src="./js/res/chinaMapConfig.js"></script>
+    <script type="text/javascript" src="./js/res/worldMapConfig.js"></script>
+    <script type="text/javascript" src="./js/map.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <style>
+        body {
+            padding-bottom: 100px;
+        }
+
+        .swiper-container {
+            height: 400px;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: white;
+            background-color: rgba(255, 255, 255, 0.5);
+            right: 10px;
+            padding: 30px;
+            color: #000 !important;
+            fill: black !important;
+            stroke: black !important;
+        }
+
+        .Swiper-wrap {
+            position: relative;
+        }
+
+        .swiper-button-prev,
+        .swiper-container-rtl .swiper-button-next {
+            left: -60px;
+        }
+
+        .swiper-button-next,
+        .swiper-container-rtl .swiper-button-prev {
+            right: -60px;
+        }
+
+        .swiper-slide p {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #000;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Map">
+        <div class="itemCon">
+            <div id="ChinaMap"></div>
+        </div>
+    </div>
+    <div class="Swiper-wrap">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/cd-xia.jpg" alt="">
+                    <p>夏</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-shang.jpg" alt="">
+                    <p>商</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-xizhou.jpg" alt="">
+                    <p>西周</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-chunqiu.jpg" alt="">
+                    <p>春秋</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-zhanguo.jpg" alt="">
+                    <p>战国</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-qin.jpg" alt="">
+                    <p>秦</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-han.jpg" alt="">
+                    <p>汉</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-wei.jpg" alt="">
+                    <p>魏</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-jin.jpg" alt="">
+                    <p>晋</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-nanbeichao.jpg" alt="">
+                    <p>南北朝</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-sui.jpg" alt="">
+                    <p>隋</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-tang.jpg" alt="">
+                    <p>唐</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-wudai.jpg" alt="">
+                    <p>五代</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-song.jpg" alt="">
+                    <p>宋</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-yuan.jpg" alt="">
+                    <p>元</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-ming.jpg" alt="">
+                    <p>明</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/cd-qing.jpg" alt="">
+                    <p>清</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/swiper-wrapper.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/SyntaxHighlighter.css">
+    <script type="text/javascript" src="./js/lib/SyntaxHighlighter.js"></script>
+</body>
+
+</html>
